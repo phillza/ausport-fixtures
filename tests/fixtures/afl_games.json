@@ -1,0 +1,40 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "round": 1,
+      "year": 2025,
+      "date": "2025-03-20 19:30:00",
+      "hteam": "Carlton",
+      "ateam": "Richmond",
+      "hscore": 85,
+      "ascore": 72,
+      "venue": "MCG",
+      "complete": 1
+    },
+    {
+      "id": 2,
+      "round": 1,
+      "year": 2025,
+      "date": "2025-03-21 19:30:00",
+      "hteam": "Collingwood",
+      "ateam": "Essendon",
+      "hscore": 102,
+      "ascore": 65,
+      "venue": "MCG",
+      "complete": 1
+    },
+    {
+      "id": 3,
+      "round": 2,
+      "year": 2025,
+      "date": "2025-03-28 19:30:00",
+      "hteam": "Richmond",
+      "ateam": "Collingwood",
+      "hscore": 50,
+      "ascore": 90,
+      "venue": "MCG",
+      "complete": 1
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "teams": [
+    {"id": 1, "name": "Adelaide", "abbrev": "ADEL"},
+    {"id": 2, "name": "Brisbane Lions", "abbrev": "BL"}
+  ]
+}
