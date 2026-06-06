@@ -116,12 +116,23 @@ class SquiggleClient:
         base_url: str = DEFAULT_BASE_URL,
         timeout: float = 15.0,
         client: httpx.Client | None = None,
+        user_agent: str = "ausport-fixtures/0.1 (https://github.com/phillza/ausport-fixtures)",
     ) -> None:
         self.base_url = base_url.rstrip("/")
         self.timeout = timeout
+        self.user_agent = user_agent
         # Allow tests to inject a mock client
-        self._client = client or httpx.Client(timeout=timeout)
-        self._owns_client = client is None
+        if client is not None:
+            self._client = client
+            self._owns_client = False
+        else:
+            # Set a User-Agent — Squiggle (and most public APIs) ban the
+            # default httpx/requests user agent.
+            self._client = httpx.Client(
+                timeout=timeout,
+                headers={"User-Agent": self.user_agent},
+            )
+            self._owns_client = True
 
     def close(self) -> None:
         if self._owns_client:
