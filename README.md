@@ -1,5 +1,9 @@
 # ausport-fixtures
 
+[![CI](https://github.com/phillza/ausport-fixtures/actions/workflows/ci.yml/badge.svg)](https://github.com/phillza/ausport-fixtures/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 > Australian sports fixtures, results, and ladders from public data sources.
 
 A small CLI for Aussie sports fans who want to look up a fixture, check the ladder, or pipe recent results into another tool. No bookmaker scraping, no auth, no secrets — just the public Squiggle API.
